@@ -1,0 +1,6 @@
+{
+    "title":"Personal Website v3",
+    "summary":"The site you are currently visiting, hosted on AWS, built with Flask, and seamlessly integrated with the GitHub API for dynamically showcasing my latest work fetched directly from my GitHub profile.",
+    "resumen":"",
+    "area":"WebDev"
+}
