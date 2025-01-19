@@ -1,0 +1,3 @@
+refactor code to implements classes
+save results and variables in db
+ui style needs more work
