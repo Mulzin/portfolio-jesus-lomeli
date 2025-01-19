@@ -1,5 +1,5 @@
 {
-    "title": "",
+    "title": "Func Sim v2",
     "summary": "Simple tool to simulate functions by specifying initial variables and the formulas that define their behavior. It computes and displays the results for each iteration in a straightforward, tabular format.",
     "resumen": "Herramienta sencilla para simular funciones especificando las variables iniciales y las fórmulas que definen su comportamiento. Calcula y muestra los resultados de cada iteración en un formato tabular sencillo.",
     "area": "Python"
