@@ -1,0 +1,3 @@
+Setup panel styling
+Bug:
+-some of the adjacentMine corners dont display their number of mines when revealing the cells
