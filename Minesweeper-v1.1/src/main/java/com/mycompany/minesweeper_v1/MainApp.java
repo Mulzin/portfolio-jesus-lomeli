@@ -298,6 +298,10 @@ public class MainApp {
             }
 
             sideCell = cellGrid[checkCoordinate[0]][checkCoordinate[1]];
+
+            if(sideCell.isMine) {
+                continue;
+            }
             
             // If the cell is adjacent to a mine but not yet displayed, show the mine count
             if (sideCell.isMineAdjacent) {
