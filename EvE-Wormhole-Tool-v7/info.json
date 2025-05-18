@@ -2,6 +2,5 @@
     "title": "EvE Wormhole Tool v7",
     "summary": "A custom mapping tool I developed to optimize navigation through wormhole space in EvE Online",
     "resumen": "Herramienta de mapeo que escribí para ayudarme a navegar el espacio de agujeros de gusano cuando jugaba EvE Online.",
-    "area": "Python" 
-
+    "area": ['Python']
 }
