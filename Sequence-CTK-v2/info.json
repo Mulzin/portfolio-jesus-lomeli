@@ -1,6 +1,0 @@
-{
-    "title":"Sequence CTK v2",
-    "summary":"A Python recreation of the board game Sequence, featuring a two-player versus mode with an intuitive graphical interface built using custom Tkinter.",
-    "resumen":"Una recreación en Python del juego de mesa Sequence, que incluye un modo de enfrentamiento para dos jugadores con una interfaz gráfica intuitiva creada con Tkinter personalizado.",
-    "area":"Python"
-}
