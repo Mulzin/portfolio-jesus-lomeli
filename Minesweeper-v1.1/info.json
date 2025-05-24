@@ -1,6 +1,6 @@
 {
     "title": "Minesweeper v1.1",
-    "summary": "Minesweeper game, built using Java and Swing, features a dynamic grid where players select the size and number of mines. It includes classic gameplay mechanics like left-clicking to reveal cells, right-clicking to flag mines, and recursive cell revealing.",
-    "resumen": "Juego de Buscaminas, construido con Java y Swing, cuenta con una cuadrícula dinámica donde los jugadores seleccionan el tamaño y el número de minas. Incluye mecánicas clásicas como hacer clic izquierdo para revelar celdas, hacer clic derecho para marcar minas y revelar celdas de forma recursiva.",
-    "area": ["Java","Games"]
+    "summary_en": "Minesweeper game, built using Java and Swing, features a dynamic grid where players select the size and number of mines. It includes classic gameplay mechanics like left-clicking to reveal cells, right-clicking to flag mines, and recursive cell revealing.",
+    "summary_sp": "Juego de Buscaminas, construido con Java y Swing, cuenta con una cuadrícula dinámica donde los jugadores seleccionan el tamaño y el número de minas. Incluye mecánicas clásicas como hacer clic izquierdo para revelar celdas, hacer clic derecho para marcar minas y revelar celdas de forma recursiva.",
+    "code": ["Java","Games"]
 }
