@@ -1,6 +1,6 @@
 {
     "title":"Personal Website v3",
-    "summary":"The site you are currently visiting, hosted on AWS, built with Flask, and seamlessly integrated with the GitHub API for dynamically showcasing my latest work fetched directly from my GitHub profile.",
-    "resumen":"El sitio que estás visitando actualmente está alojado en AWS, construido con Flask e integrado perfectamente con la API de GitHub para mostrar dinámicamente mi trabajo más reciente obtenido directamente de mi perfil de GitHub.",
+    "summary_en":"The site you are currently visiting, hosted on AWS, built with Flask, and seamlessly integrated with the GitHub API for dynamically showcasing my latest work fetched directly from my GitHub profile.",
+    "summary_sp":"El sitio que estás visitando actualmente está alojado en AWS, construido con Flask e integrado perfectamente con la API de GitHub para mostrar dinámicamente mi trabajo más reciente obtenido directamente de mi perfil de GitHub.",
     "area":["AWS","Python","Flask","Javascript","HTML","CSS"]
 }
