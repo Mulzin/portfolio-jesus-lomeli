@@ -3,5 +3,5 @@
     "summary_en":"The site you are currently visiting. A Django-powered portfolio site, deployed on AWS with ECR and App Runner, that dynamically displays my projects by integrating with the GitHub API.",
     "summary_sp":"El sitio que estás visitando. Un portafolio creado con Django, desplegado en AWS usando ECR y App Runner, que muestra mis proyectos de forma dinámica integrando la API de GitHub.",
     "code":["AWS","ECR","Python","Django","Javascript","HTML","CSS"],
-    "link":"github.com/Mulzin/portfolio-jesus-lomeli/tree/main/aws_curriculum_website"
+    "link":"github.com/Mulzin/portfolio-jesus-lomeli/tree/main/Django_Portfolio"
 }
