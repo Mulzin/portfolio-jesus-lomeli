@@ -1,0 +1,26 @@
+# Use Python 3.9 as the base image
+FROM python:3.9-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV REPO_URL=https://api.github.com/repos/Mulzin/portfolio-jesus-lomeli/contents
+ENV RAW_REPO_URL=https://raw.githubusercontent.com/Mulzin/portfolio-jesus-lomeli/refs/heads/main/
+ENV JSON_PATH=publicViews/static/json/portfolioInfo.json
+
+# Set the working directory
+WORKDIR /app
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the Django project
+COPY ./src /app
+
+# Expose port 8000 (default Django port)
+EXPOSE 8000
+
+# Run Django development server
+RUN python manage.py initPortfolio
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

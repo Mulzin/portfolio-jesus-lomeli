@@ -1,0 +1,59 @@
+:root {
+    --black: #0A0A0A;
+    --dark-gray: #1E1018;
+    --neon-red: #FF003C;
+    --neon-orange: #FF5E1A;
+    --neon-yellow: #FFD700;
+    --neon-pink: #FF1493;
+    --text-light: #F0F0F0;
+    --text-gray: #C0C0C0;
+}
+.side-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: fit-content;
+    z-index: 100;
+    /*top: 20vh;*/
+}
+.container-div {
+    background: linear-gradient(90deg, var(--neon-orange), var(--neon-red));
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    transition: left 0.5s ease;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 0 15px var(--neon-red);
+    margin-top: 5vh;
+}
+.link-container {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.link-container a,
+.link-container a:visited {
+    color: var(--black);
+    white-space: nowrap;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px;
+}
+.button-div img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.container-div:hover {
+    box-shadow: 0 0 25px var(--neon-yellow);
+    transform: scale(1.05);    
+}
+@keyframes slideInLeft {
+    to {
+      transform: translateX(0);
+    }
+}

@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Lomeli | Backend & Web Developer</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="{% static 'script/scripts.js' %}"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo glow-red">JESUS LOMELI</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="lang-dropdown">
+                        <button class="lang-btn">
+                            <span class="lang-icon"><i class="fas fa-globe"></i></span>
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="lang-menu">
+                            <a href="/en_home" class="lang-option">English</a>
+                            <a href="/sp_home" class="lang-option">Español</a>
+                        </div>
+                    </div>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>BACKEND & WEB DEVELOPER</h1>
+                <p>I build responsive, high-performance web applications with modern technologies. I am passionate about delivering robust solutions for real-world business needs.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="cyber-button">View My Work</a>
+                    <a href="#contact" class="cyber-button btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title glow-red">About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="{% static 'imgs/yo_mero.jpeg' %}" alt="Jesus Lomeli">
+                </div>
+                <div class="about-text">
+                    <h3 class="glow-orange">Hello! I'm Jesus Lomeli, a dedicated backend and web developer.</h3>
+                    <p>As an enthusiastic junior developer with a strong foundation in full-stack development, I am excited to apply my skills to build scalable and maintainable applications. I am a quick learner, proficient in key technologies, and deeply committed to writing clean, well-documented code.</p>
+                    <p>I thrive in collaborative environments and am always seeking new opportunities to learn—whether through tackling new challenges, contributing to open-source, or receiving guidance from experienced mentors. I'm looking for a team where I can grow and contribute from day one.</p>
+                    <a href="{% static 'files/Lomeli_Jesus_cv_en.pdf' %}" class="cyber-button" style="margin-top: 30px;" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title glow-yellow">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" class="skill-icon">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="{% static 'imgs/skills/js.png' %}" alt="JavaScript" class="skill-icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML/CSS" class="skill-icon">
+                    <p>HTML/CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6124/6124995.png" alt="Linux" class="skill-icon">
+                    <p>Linux</p>
+                </div>
+                <div class="skill-item">
+                    <img src="{% static 'imgs/skills/django.png' %}" alt="Django" class="skill-icon">
+                    <p>Django</p>
+                </div>
+                <div class="skill-item">
+                    <img src="{% static 'imgs/skills/aws.png' %}" alt="AWS" class="skill-icon">
+                    <p>AWS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="{% static 'imgs/skills/git.png' %}" alt="Git" class="skill-icon">
+                    <p>Git</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" class="skill-icon">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++" class="skill-icon">
+                    <p>C++</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title glow-orange">My Projects</h2>
+            <div class="projects-grid projects"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title glow-red">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>jesusalomelis@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+52 33 1791 1127</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Guadalajara, Jalisco, Mexico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3 class="glow-orange">Jesus Lomeli</h3>
+                    <p>Backend and web developer focused on building reliable, scalable, and innovative solutions for businesses and individuals.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="glow-red">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="glow-yellow">Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Mulzin"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jesus-lomeli-479a2b266"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Jesus Lomeli. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="language" data-language="en"></div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        window.STATIC_URL = "{% static '' %}";
+        mobileCompatibility();
+        getPortfolioData();
+        const langDropdown = document.querySelector('.lang-dropdown');
+        const langBtn = document.querySelector('.lang-btn');
+        if (langBtn && langDropdown) {
+            langBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                langDropdown.classList.toggle('open');
+            });
+            document.addEventListener('click', function() {
+                langDropdown.classList.remove('open');
+            });
+        }
+    });
+</script>
+</html>
