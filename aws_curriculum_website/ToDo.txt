@@ -1,2 +1,0 @@
-CSS is cluttered and needs a refactor
-rest_projects() on a timer instead of only running at the start of the server
