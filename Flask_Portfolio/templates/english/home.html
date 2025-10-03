@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script> 
+</head>
+<body>
+    <div class="header">
+        <div class="contact-div" onclick="toggleContactVisibility()">Contact</div>
+        <div class="nav-div">
+            <div class="left-div" >
+                <a class="active" href="{{ url_for('home') }}">Home</a>
+            </div>
+            <div class="center-div">
+                <a href="{{ url_for('portfolio') }}">Portfolio</a>
+            </div>
+            <div class="right-div">
+                <div class="lng-div">
+                    <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/innit.png') }}"/></a>
+                </div>
+                <div class="eng-div">
+                    <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/innit.png') }}"/></a>
+                </div>
+                <div class="spa-div">
+                    <a href="{{ url_for('inicio') }}"><img src="{{ url_for('static', filename='images/spain.png') }}"/></a>
+                </div>               
+            </div>            
+        </div>
+    </div>
+    <div class="main" id="mainDiv"> 
+        <div class="banner">
+            <p class="welcome">Welcome !</p>
+            <p class="banner-p">I'm Jesus,<br>Software Developer</p>
+        </div>        
+        <div class="topic first-topic">
+            <p class="topic-title">ABOUT ME</p>
+            <p class="topic-content">Recently graduated Software Developer with a strong foundation in Python, Java, and AWS, and a working knowledge of SQL, HTML, CSS, and JavaScript. Known for problem-solving skills, adaptability, and a positive, growth-oriented mindset. Eager to contribute to innovative software development projects and grow within a collaborative team environment.</p>
+        </div>
+        <div class="topic">
+            <p class="topic-title">EDUCATION</p>
+            <p>Bachelor in Computer Science, 2024
+                <p><b>Universidad Tecnologica de Guadalajara</b></p>
+            <p>- Guadalajara, JAL</p>
+        </div>  
+        <div class="topic">
+            <p class="topic-title">TECHNICAL SKILLS</p>
+            <p>- Python</p>
+            <p>- Java</p>
+            <p>- AWS</p>
+            <p>- HTML</p>
+            <p>- CSS</p>
+            <p>- JS</p>        
+        </div> 
+        <div class="topic">
+            <p class="topic-title">SOFT SKILLS</p>
+            <p>- Problem-solving and analytical thinking</p>
+            <p>- Calm under pressure and adaptable to new challenges</p>
+            <p>- Self-motivated and curious about emerging technologies</p>
+            <p>- Strong team collaboration and communication</p>           
+        </div> 
+        <div class="topic">
+            <p class="topic-title">LANGUAGES</p>
+            <p><b>Spanish:</b> First Language</p>
+            <p><b>English:</b> B1</p>
+        </div>    
+    </div> 
+    <div class="contact" id="toggleDiv">
+        <img src="{{ url_for('static', filename='images/yo_mero.jpeg') }}" class="image" />
+        <p>Jesus Lomeli</p>
+        <p>Software Developer</p>
+        <p class="divider"></p>
+        <p>jesusalomelis@gmail.com</p>
+        <p>Guadalajara, Mexico</p>
+        <p class="box">+52 33 1791 1127</p>        
+        <a class="box" href="https://github.com/Mulzin/portfolio-j-lomeli.git">Github</a>
+    </div>
+</body>
+</html>

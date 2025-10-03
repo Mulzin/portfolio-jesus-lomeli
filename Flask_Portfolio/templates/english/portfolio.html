@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="contact-div" onclick="toggleContactVisibility()">Contact</div>
+        <div class="nav-div">
+            <div class="left-div" >
+                <a href="{{ url_for('home') }}">Home</a>
+            </div>
+            <div class="center-div">
+                <a class="active" href="{{ url_for('portfolio') }}">Portfolio</a>
+            </div>
+            <div class="right-div">
+                <div class="lng-div">
+                    <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/innit.png') }}"/></a>
+                </div>
+                <div class="eng-div">
+                    <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/innit.png') }}"/></a>
+                </div>
+                <div class="spa-div">
+                    <a href="{{ url_for('inicio') }}"><img src="{{ url_for('static', filename='images/spain.png') }}"/></a>
+                </div>               
+            </div>            
+        </div>
+    </div>
+    <div class="main" id="mainDiv">
+        <div class="banner">
+            <p class="welcome">Portfolio</p>
+            <p class="banner-p">A collection of my personal projects, websites,<br>games and other snippets</p>
+        </div>  
+    </div> 
+    <div class="contact" id="toggleDiv">
+        <img src="{{ url_for('static', filename='images/yo_mero.jpeg') }}" class="image" />
+        <p>Jesus Lomeli</p>
+        <p>Software Developer</p>
+        <p class="divider"></p>
+        <p>jesusalomelis@gmail.com</p>
+        <p>Guadalajara, Mexico</p>
+        <p class="box">+52 33 1791 1127</p>        
+        <a class="box" href="https://github.com/Mulzin/portfolio-j-lomeli.git">Github</a>
+    </div>
+</body>
+<script>
+    const staticUrl = "{{ url_for('static', filename='images/project_thumbnail/') }}"
+
+    function writeImgSrc(img,imgPath) {
+        var imgSrc = `${staticUrl}${imgPath}`
+        img.src = imgSrc
+    }
+    
+    getProjects();
+</script>
+</html>
