@@ -3,5 +3,6 @@
     "summary_en":"Mi previous website, hosted on AWS, built with Flask, and seamlessly integrated with the GitHub API for dynamically showcasing my latest work fetched directly from my GitHub profile.",
     "summary_sp":"Mi anterior sitio web, alojado en AWS, construido con Flask e integrado perfectamente con la API de GitHub para mostrar dinámicamente mi trabajo más reciente obtenido directamente de mi perfil de GitHub.",
     "code":["AWS","Python","Flask","Javascript","HTML","CSS"],
-    "link":"github.com/Mulzin/portfolio-jesus-lomeli/tree/main/aws_curriculum_website"
+    "link":"https://github.com/Mulzin/portfolio-jesus-lomeli"
 }
+
